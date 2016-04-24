@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
 
 import List from './list';
 
@@ -20,4 +20,9 @@ render() {
         );
       }
     }
+
+  KanbanBoard.propTypes = {
+    cards: PropTypes.arrayOf(PropTypes.object)
+    };
+
     export default KanbanBoard;
